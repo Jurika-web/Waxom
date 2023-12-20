@@ -1,0 +1,112 @@
+footer{
+    background-color: #111111;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 6vw;
+    color: #555555;
+  }
+  @media (max-width: 375px) and (orientation: portrait){
+    footer{
+      background-color: #111111;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 25vw;
+    }
+  }
+  @media (max-width: 667px)and (orientation: landscape){
+    footer{
+      height: 10vw;
+      padding: 1%;
+    }
+    }
+  footer a{
+    color: #555555;
+    padding: 0 13px;
+    border-right: 1px solid #555555;
+    font-size: 1vw;
+    transition: 0.2s;
+    cursor: url(./images/pointer.png), pointer;
+  }
+  @media (max-width: 375px) and (orientation: portrait){
+    footer a{
+      padding: 0 20px;
+      border-right: 2px solid #555555;
+      font-size: 3vw;
+      transition: 0.2s;
+      border-right: 0px solid #555555;
+      }
+  }
+  @media (max-width: 667px)and (orientation: landscape){
+    footer a{
+      padding: 0 10px;
+      font-size: 2vw;
+     }
+    }
+  .footer_left h2 a{
+    color: #959595;
+    cursor: url(./images/pointer.png), pointer;
+    font-size: 15px;
+    position: relative;
+    bottom: 5px;
+  }
+  @media (max-width: 667px)and (orientation: landscape){
+    .footer_left h2 a{
+      position: relative;
+      bottom: 4px;
+    }
+    }
+  .footer_left a:last-child{
+    border-right: none;
+  }
+  .footer_right p:last-child a:last-child{
+    border-right: none;
+  }
+  .footer_right p:last-child{
+    margin-left: 15px;
+  }
+  @media (max-width: 375px) and (orientation: portrait){
+    .footer_right p:last-child{
+      margin-left: 0px;
+    }
+  }
+  .footer_right p a{
+    color: #959595;
+  }
+  footer a:hover{
+    color: var(--accentColorLight);
+  }
+  footer div{
+    display: flex;
+    font-size: 1vw;
+  }
+  @media (max-width: 375px) and (orientation: portrait){
+    footer div{
+      display: flex;
+      flex-direction: column;
+      font-size: 3vw;
+    }
+  }
+  .footer_left{
+    margin-right: 30vw;
+  }
+  @media (max-width: 375px) and (orientation: portrait){
+    .footer_left{
+      margin-right: 10vw;
+    }
+  }
+  @media (max-width: 667px)and (orientation: landscape){
+    .footer_left{
+      margin-right:50px;
+    }
+    }
+  #footer a{
+    text-decoration: none;
+    cursor: url(./images/pointer.png), pointer;
+  }
+  .footer_left b{
+    color: var(--accentColorLight);
+    cursor: url(./images/pointer.png), pointer;
+  }

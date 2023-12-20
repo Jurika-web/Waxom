@@ -1,0 +1,18 @@
+#sec8{
+    height: 25vw;
+    background-image: url('./images/down_pcture.png');
+    background-size: cover;
+    object-fit: cover;
+    background-position: 50% 50%;
+    display: flex;
+  }
+  #sec8 img{
+    height: 12vw;
+    width: 14vw;
+    z-index: 3;
+    opacity: 1;
+    position: relative;
+    top: 6vw;
+    left: 3vw;
+    margin-left: 7vw;
+  }

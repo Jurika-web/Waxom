@@ -1,0 +1,408 @@
+/*Section2 - Benefits*/
+#sec2{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#benefits{
+  height: 22vw;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
+  gap: 40px;
+}
+@media (max-width: 375px)and (orientation: portrait){
+  #benefits{
+    height: 55vw;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 667px)and (orientation: landscape){
+  #benefits{
+    height: 20vw;
+    gap: 30px;
+    margin-top: 30px;
+  }
+}
+.use1,
+.use2,
+.use3,
+.use4{
+  display: flex;
+  flex-direction: column;
+  width: 16%;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+@media (max-width: 375px)and (orientation: portrait){
+.use1,
+.use2,
+.use3,
+.use4{
+  width: 36%;
+}
+}
+.use1:hover h2{
+  color: var(--accentColorLight);
+}
+.use2:hover h2{
+  color: var(--accentColorLight);
+}
+.use3:hover h2{
+  color: var(--accentColorLight);
+}
+.use4:hover h2{
+  color: var(--accentColorLight);
+}
+.use1:hover #line1{
+  background-color: var(--accentColorLight);
+}
+.use2:hover #line2{
+  background-color: var(--accentColorLight);
+}
+.use3:hover #line3{
+  background-color: var(--accentColorLight);
+}
+.use4:hover #line4{
+  background-color: var(--accentColorLight);
+}
+.use1:hover #pencil{
+  background-image: url(./images/pensil_a.png);
+}
+.use2:hover #books{
+  background-image: url(./images/books_a.png);
+}
+.use3:hover #gear{
+  background-image: url(./images/gear_a.png);
+}
+.use4:hover #folder{
+  background-image: url(./images/folder_a.png);
+}
+#benefits h2{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1vw;
+  padding-bottom: 20px;
+}
+@media (max-width: 375px)and (orientation: portrait){
+  #benefits h2{
+    font-size: 4vw;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 667px)and (orientation: landscape){
+  #benefits h2{
+    font-size: 12px;
+    padding-bottom: 10px;
+  }
+}
+#benefits p{
+  text-align: center;
+  color: #959595;
+  margin-bottom: 1vw;
+  line-height: 2vw;
+}
+@media (max-width: 375px)and (orientation: portrait){
+  #benefits p{
+    display: none;
+  }
+}
+@media (max-width: 375px)and (orientation: portrait){
+  #benefits p{
+    line-height: 3px;
+  }
+}
+.use1 a{
+  font-size: 1vw;
+}
+.use2 a{
+  font-size: 1vw;
+}
+.use3 a{
+  font-size: 1vw;
+}
+.use4 a{
+  font-size: 1vw;
+}
+#benefits .line{
+  width: 50px;
+  height: 2px;
+  background-color: #f1eee9;
+}
+#benefits a{
+  text-decoration: none;
+  color: #959595;
+}
+#pencil,
+#books,
+#gear,
+#folder{
+  width: 80%;
+  height: 4vw;
+  margin-top: 20px;
+}
+@media (max-width: 375px)and (orientation: portrait){
+#pencil,
+#books,
+#gear,
+#folder{
+  width: 100%;
+  height: 12vw;
+  margin-top: 10px;
+}
+}
+@media (max-width: 667px)and (orientation: landscape){
+#pencil,
+#books,
+#gear,
+#folder{
+  width: 100%;
+  height: 8vw;
+}
+} 
+#pencil{
+  background-image: url(./images/pensil.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+@media (max-width: 375px)and (orientation: portrait){
+  #pencil{
+    background-size: 30%;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 667px)and (orientation: landscape){
+  #pencil{
+    background-size: 50%;
+    margin-bottom: 10px;
+  }
+}
+#books{
+  background-image: url(./images/books.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+@media (max-width: 375px)and (orientation: portrait){
+  #books{
+    background-size: 30%;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 667px)and (orientation: landscape){
+  #books{
+    background-size: 50%;
+    margin-bottom: 10px;
+  }
+}
+#gear{
+  background-image: url(./images/gear.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+@media (max-width: 375px)and (orientation: portrait){
+  #gear{
+    background-size: 30%;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 667px)and (orientation: landscape){
+  #gear{
+    background-size: 50%;
+    margin-bottom: 10px;
+  }
+}
+#folder{
+  background-image: url(./images/folder.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+@media (max-width: 375px)and (orientation: portrait){
+  #folder{
+    background-size: 30%;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 667px)and (orientation: landscape){
+  #folder{
+    background-size: 50%;
+    margin-bottom: 10px;
+  }
+}
+/*Section2-PurchaseNow*/
+#purchaseNow{
+  background: linear-gradient(to right, rgba(33,27,25,1) 0%, rgba(78,52,39,1) 100%);
+  display: flex;
+  justify-content: center;
+  height: 8vw;
+  align-items: center;
+  color: #fff;
+}
+@media (max-width: 375px)and (orientation: portrait){
+  #purchaseNow{
+    flex-direction: column;
+    height: 30vw;
+  }
+}
+@media (max-width: 667px)and (orientation: landscape){
+  #purchaseNow{
+    height: 12vw;
+  }
+}
+#purchaseNow div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 375px)and (orientation: portrait){
+  #purchaseNow div{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 667px)and (orientation: landscape){
+  #purchaseNow div{
+    display: flex;
+    flex-direction: column;
+  }
+}
+#purchaseNow h3, span{
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vw;
+}
+@media (max-width: 375px)and (orientation: portrait){
+  #purchaseNow h3, span{
+    font-size: 4vw;
+  }
+}
+@media (max-width: 667px)and (orientation: landscape){
+  #purchaseNow h3, span{
+    font-size: 3vw;
+  }
+}
+#purchaseNow h3{
+  position: relative;
+  left: -7vw;
+  top: -2vw;
+}
+@media (max-width: 375px)and (orientation: portrait){
+  #purchaseNow h3{
+    left: -2vw;
+    top: -3vw;
+  }
+}
+@media (max-width: 667px)and (orientation: landscape){
+  #purchaseNow h3{
+    left: -5vw;
+    top: -1vw;
+  }
+}
+#purchaseNow span{
+  color: var(--accentColorLight);
+}
+@media (max-width: 667px)and (orientation: landscape){
+  #purchaseNow span{
+   width: 50%;
+  }
+}
+#purchaseNow p{
+  font-size: 1vw;
+  color: #4d433f;
+  font-weight: 800;
+  position: relative;
+  left: -44vw;
+  bottom: -1vw;
+}
+@media (max-width: 375px) and (orientation: portrait){
+  #purchaseNow p{
+    font-size: 13px;
+    position: relative;
+    left: 3vw;
+    bottom: 0vw;
+  }
+}
+@media (max-width: 667px) and (orientation: landscape){
+  #purchaseNow p{
+    font-size: 18px;
+    left: 0vw;
+    bottom: -1vw;
+  }
+}
+#purchaseNow .Purchase_Button{
+  position: relative;
+  left:5%;
+  height: 30%;
+  width: 15%;
+  border: none;
+  border-radius: 5px;
+  background-color:var(--accentColorMain);
+  box-shadow: 0px 3px 0px #362f2d;
+  display: block;
+}
+@media (max-width: 375px)and (orientation: portrait){
+  #purchaseNow .Purchase_Button{
+    position: relative;
+    left:0%;
+    top: 10%;
+    height: 20%;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 667px) and (orientation: landscape){
+  #purchaseNow .Purchase_Button{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#purchaseNow .Purchase_Button:hover{
+  background-color:var(--accentColorLight);
+}
+#purchaseNow a{
+  text-decoration: none;
+  color: #fff;
+}
+.Purchase_Button b{
+font-size: 1vw;
+margin-left: 27%;
+position: absolute;
+top: 23%;
+cursor: url(./images/pointer.png), pointer;
+}
+@media (max-width: 375px)and (orientation: portrait){
+  .Purchase_Button b{
+    font-size: 3vw;
+    position: absolute;
+    left: 0%;
+    top: 18%;
+    cursor: url(./images/pointer.png), pointer;
+    }
+}
+@media (max-width: 667px) and (orientation: landscape){
+  .Purchase_Button b{
+    font-size: 2vw;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    right: 3vw;
+    }
+}

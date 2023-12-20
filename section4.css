@@ -1,0 +1,133 @@
+#sec4{
+    height: 40vw;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 20px;
+  }
+  @media (max-width: 375px) and (orientation: portrait){
+      #sec4{
+        height: 80vw;
+      }
+    }
+    @media (max-width: 667px)and (orientation: landscape){
+      #sec4{
+        height: 53vw;
+        overflow: hidden;
+        text-align: center;
+        margin-top: 20px;
+      }
+    }
+  #video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+  }
+  .circle{
+    width: 8%;
+    height: 7vw;
+    border-radius: 70px;
+    background-color: rgba(24, 23, 23, 0.137);
+   
+    position: absolute;
+    top: 35%;
+    left: 46%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  @media (max-width: 375px) and (orientation: portrait){
+    .circle{
+      width: 20%;
+      height: 20vw;
+      position: absolute;
+      top: 30%;
+      left: 43%;
+    }
+  }
+  #playIcon{
+    position: absolute;
+    cursor: pointer;
+    width: 87%;
+    height: 87%;
+    background-image: url(./images/button_video.png);
+    background-size:87%;
+    background-repeat: no-repeat;
+    cursor: url(./images/pointer.png), pointer;
+  }
+  @media (max-width: 375px) and (orientation: portrait){
+    #playIcon{
+      width: 87%;
+      height: 87%;
+      background-size:85%;
+      top: 13%
+    }
+  }
+  #playIcon:hover{
+    background-image: url(./images/circle_video_a.png);
+  }
+  #video h1{
+    position: absolute;
+    top: 60%;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2vw;
+  }
+  @media (max-width: 375px) and (orientation: portrait){
+    #video h1{
+      font-size: 6vw;
+    }
+  }
+  @media (max-width: 667px)and (orientation: landscape){
+    #video h1{
+      font-size: 5vw;
+      top: 55%;
+    }
+  }
+  #video>p{
+    position: absolute;
+    top: 70%;
+    width: 600px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+  }
+  @media (max-width: 375px) and (orientation: portrait){
+    #video>p{
+      position: absolute;
+      top: 73%;
+      width: 300px;
+      color: #fff;
+      font-family: 'Raleway', sans-serif;
+      font-size: 3vw;
+    }
+  }
+  @media (max-width: 667px)and (orientation: landscape){
+    #video>p{
+      width: 600px;
+      font-size: 2vw;
+    }
+  }
+  #video>b{
+    position: absolute;
+    top: 90%;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1vw;
+  }
+  @media (max-width: 375px) and (orientation: portrait){
+    #video>b{
+      top: 93%;
+      font-size: 10px;
+    }
+  }
+  @media (max-width: 667px)and (orientation: landscape){
+    #video>b{
+      top: 90%;
+      font-size: 12px;
+    }
+  }

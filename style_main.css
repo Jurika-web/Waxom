@@ -1,0 +1,210 @@
+*{
+  scroll-behavior: smooth;
+  cursor: url(./images/cursor.png), auto;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  --accentColorLight: #d0b399;
+  --accentColorMain: #998675;
+  --accentColorDark: #362f2d;
+  --moduleWidth: 100vw;
+  --moduleHeight: 100vh;
+  ::selection {background-color:#998675 ;color: white;}
+}
+/*Загрузочный экран*/
+body{
+  overflow-y: hidden;
+  animation: body 10s forwards;
+}
+@keyframes body{
+from{
+  overflow-y: hidden;
+}
+to{
+  overflow-y: auto;
+}
+}
+.preloader_page{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  animation: preloader_ani 3s forwards;
+  animation-delay: 3s;
+  overflow: hidden;
+}
+@keyframes preloader_ani{
+  from{
+    z-index: 5;
+    display: flex;
+  }
+  to{
+    z-index: 0;
+    display: none;
+  }
+}
+.preloader_block{
+  width: 50%;
+  height: 100%;
+  background-color: var(--accentColorLight);
+  animation: left_page 4s linear forwards;
+  animation-delay: 0.5s;
+  overflow-y:auto;
+}
+.preloader_block:last-child{
+  animation: right_page 4s linear forwards;
+  animation-delay: 0.5s;
+  overflow-y:auto;
+}
+.loading_block{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  animation: loading 0.5s ease forwards;
+  animation-delay: 0.5s;
+}
+@keyframes loading{
+  from{
+    opacity:1;
+    z-index: 1000;
+  }
+  to{
+    opacity:0;
+    z-index: 0;
+  }
+}
+.title{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.process{
+width: 200px;
+height: 12px;
+border: solid 1px  #362f2d;
+border-radius: 25px;
+position: relative;
+}
+.process::before{
+content: '';
+position: absolute;
+top: 2px;
+bottom: 2px;
+left: 2px;
+background-color: #362f2d;
+border-radius: 25px;
+animation: process_line .7s ease forwards;
+}
+@keyframes process_line{
+  from{
+    width: 0;
+  }
+  to{
+    width: calc(100% - 4px);
+  }
+}
+@keyframes left_page{
+  0%{
+    transform: translateX(0) scale(1) rotateY(0);
+  }
+  50%{
+    transform: translateX(0) scale(.9) rotateY(10deg);
+  }
+  100%{
+    transform: translateX(-110%) scale(.9) rotateY(10deg);
+  }
+}
+@keyframes right_page{
+  0%{
+    transform: translateX(0) scale(1) rotateY(0);
+  }
+  50%{
+    transform: translateX(0) scale(.9) rotateY(-10deg);
+  }
+  100%{
+    transform: translateX(110%) scale(.9) rotateY(-10deg);
+  }
+}
+/*Кнопки прокрутки страницы*/
+#Up, #Down{
+  height: 3vw;
+  width: 3vw;
+  background-color: var(--accentColorMain);
+  font-size: 30px;
+  z-index: 10;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  border-radius: 50%;
+  border-color: var(--accentColorLight);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+  z-index: 0;
+  animation: 3s up_down 4s forwards;
+}
+@media (max-width: 375px)and (orientation: portrait){
+  #Up, #Down{
+    height: 10vw;
+    width: 10vw;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+}
+@media (max-width: 667px)and (orientation: landscape){
+  #Up, #Down{
+    height: 5vw;
+    width: 5vw;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+}
+@keyframes up_down{
+  from{
+    z-index: 0;
+  }
+  to{
+    z-index: 5;
+  }
+}
+#Up{
+  position: fixed;
+  bottom: 15%;
+  right: 5%; 
+  color: white;
+}
+#Down{
+  color: white;
+}
+#Up a,
+#Down a{
+  font-size: 2vw;
+  color: var(--accentColorLight);
+  cursor: url(./images/pointer.png), pointer;
+}
+#Down:hover{
+  font-size: 1vw;
+}
+#Up:hover{
+  font-size: 1vw;
+}
+/*Кастомный Скроллбар*/
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-track{
+  background-color: var(--accentColorLight);
+}
+::-webkit-scrollbar-thumb{
+  background-image: linear-gradient( #d0b399,#362f2d, #d0b399);
+  border-radius: 50%;
+  border: solid 2px var(--accentColorLight);
+}

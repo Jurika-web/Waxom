@@ -1,0 +1,446 @@
+#sec7{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  z-index: 3;
+}
+  @media (max-width: 375px) and (orientation: portrait){
+    #sec7{
+      margin-bottom: 10px;
+  }
+  }
+#sec7 h2{
+  padding-top: 3vw;
+  margin-bottom: 3vw;
+  color:#4a4a4a;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vw;
+  text-align: center;
+}
+  @media (max-width: 375px) and (orientation: portrait){
+    #sec7 h2{
+      margin-bottom: 1vw;
+      font-size: 5vw;
+    }
+  }
+  @media (max-width: 667px)and (orientation: landscape){
+    #progress{
+      height: 30vw;
+    }
+  }
+  .data{
+    height: 18%;
+    width: 13%;
+    z-index: 6;
+    border-radius: 20px;
+    position: absolute;
+    left: 15%;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 375px) and (orientation: portrait){
+    .data{
+      height: 25%;
+      width: 40%;
+      position: relative;
+      left: 5%;
+      top: 9%;
+    }
+  }
+.data1{
+height: 3vw;
+width: 100%;
+color: white;
+font-size: 2vw;
+text-align: center;
+border-radius: 5px 5px 0px 0px;
+padding-top: 2%;
+background-color:#4a4a4a;
+animation: 1s dat1anim 1s
+}
+@media (max-width: 375px) and (orientation: portrait){
+  .data1{
+    height: 60%;
+    font-size: 5vw;
+    padding-top: 2px;
+  }
+}
+.data2{
+height: 2vw;
+width: 100%;
+color: white;
+font-size: 1vw;
+text-align: center;
+z-index: 5;
+border-radius: 0px 0px 5px 5px;
+padding-top: 5%;
+background-color: black;
+animation: 1s dat2anim 1s
+}
+@media (max-width: 375px) and (orientation: portrait){
+  .data2{
+    height: 40%;
+    font-size: 3vw;
+    text-align: center;
+    z-index: 5;
+    border-radius: 0px 0px 5px 5px;
+    padding-top: 5%;
+  }
+}
+@media (max-width: 667px)and (orientation: landscape){
+  .data2{
+    font-size: 10px;
+  }
+}
+.data3{
+height: 3vw;
+width: 100%;
+color: white;
+font-size: 2vw;
+text-align: center;
+border-radius: 5px 5px 0px 0px;
+padding-top: 2%;
+background-color:#4a4a4a;
+animation: 1s dat1anim 3s
+}
+@media (max-width: 375px) and (orientation: portrait){
+  .data3{
+    height: 60%;
+    font-size: 5vw;
+    padding-top: 2px;
+  }
+}
+.data4{
+height: 2vw;
+width: 100%;
+color: white;
+font-size: 1vw;
+text-align: center;
+z-index: 5;
+border-radius: 0px 0px 5px 5px;
+padding-top: 5%;
+background-color: black;
+animation: 1s dat2anim 3s
+}
+@media (max-width: 375px) and (orientation: portrait){
+  .data4{
+    height: 40%;
+    font-size: 3vw;
+    text-align: center;
+    z-index: 5;
+    border-radius: 0px 0px 5px 5px;
+    padding-top: 5%;
+  }
+}
+@media (max-width: 667px)and (orientation: landscape){
+  .data4{
+    font-size: 10px;
+  }
+}
+.data5{
+height: 3vw;
+width: 100%;
+color: white;
+font-size: 2vw;
+text-align: center;
+border-radius: 5px 5px 0px 0px;
+padding-top: 2%;
+background-color:#4a4a4a;
+animation: 1s dat1anim 5s
+}
+@media (max-width: 375px) and (orientation: portrait){
+  .data5{
+    height: 60%;
+    font-size: 5vw;
+    padding-top: 2px;
+  }
+}
+.data6{
+height: 2vw;
+width: 100%;
+color: white;
+font-size: 1vw;
+text-align: center;
+z-index: 5;
+border-radius: 0px 0px 5px 5px;
+padding-top: 5%;
+background-color: black;
+animation: 1s dat2anim 5s
+}
+@media (max-width: 375px) and (orientation: portrait){
+  .data6{
+    height: 40%;
+    font-size: 3vw;
+    text-align: center;
+    z-index: 5;
+    border-radius: 0px 0px 5px 5px;
+    padding-top: 5%;
+  }
+}
+@media (max-width: 667px)and (orientation: landscape){
+  .data6{
+    font-size: 10px;
+  }
+}
+@keyframes dat1anim{
+from{
+background-color:#4a4a4a;}
+to{
+background-color:#d0b399;}
+}
+@keyframes dat2anim{
+from{
+background-color:black;}
+to{
+background-color:#998675;}
+}
+#sec7 p{
+  color: #8c8c8c;
+  width: 50vw;
+  text-align: center;
+  font-size: 1vw;
+  margin-bottom: 3vw;
+}
+@media (max-width: 375px) and (orientation: portrait){
+  #sec7 p{
+    width: 80%;
+    font-size: 10px;
+  }
+}
+@media (max-width: 667px)and (orientation: landscape){
+  #sec7 p{
+    width: 80%;
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+}
+  .disc{
+    height: 10vw;
+    width: 80%;
+    background-color:  #fbfaf8;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  @media (max-width: 375px) and (orientation: portrait){
+    .data5{
+      display: none;
+    }
+  }
+  @media (max-width: 667px)and (orientation: landscape){
+    .disc{
+      height: 35%;
+      width: 80%;
+    }
+  }
+#descr1{
+ animation: 1s diskanim 1s;
+}
+#descr2{
+ animation: 1s diskanim 3s;
+}
+#descr3{
+ animation: 1s diskanim 5s;
+}
+@keyframes diskanim{
+from{
+background-color: #e3e2e1;
+}
+to{
+background-color: #362f2d;
+}
+}
+  #calendar{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media (max-width: 375px) and (orientation: portrait){
+    #calendar{
+      height: 150px;
+      gap:3px;
+      margin-left: 2%;
+      margin-right: 2%;
+      margin-bottom: 4%;
+    }
+  }
+  .post{
+   position: relative;
+   width: 33%;
+   height: 27vw;
+   overflow: hidden;
+   margin-bottom: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+  }
+  @media (max-width: 375px) and (orientation: portrait){
+    .post{
+      position: relative;
+      width: 30%;
+      height: 150px;
+      margin-bottom: 10px;
+     }
+  }
+  @media (max-width: 667px)and (orientation: landscape){
+    .post{
+      width: 30%;
+      height: 100%;
+      justify-content: flex-start;
+      margin-bottom: 10pxpx;
+     }
+    }
+#pic1{
+width: 80%;
+height: 70%;
+object-fit: cover;
+filter: none;
+animation: 1s picanim 1s;
+}
+@media (max-width: 375px) and (orientation: portrait){
+  #pic1{
+    width: 100%;
+    height: 80%;
+    }
+}
+@media (max-width: 667px)and (orientation: landscape){
+  #pic1{
+    width: 80%;
+    height: 50%;
+    }
+  }
+#pic2{
+width: 80%;
+height: 70%;
+object-fit: cover;
+filter: none;
+animation: 1s picanim 3s;
+}
+@media (max-width: 375px) and (orientation: portrait){
+  #pic2{
+    width: 100%;
+    height: 80%;
+  }
+}
+@media (max-width: 667px)and (orientation: landscape){
+  #pic2{
+    width: 80%;
+    height: 50%;
+    }
+  }
+#pic3{
+width: 80%;
+height: 70%;
+object-fit: cover;
+filter: none;
+animation: 1s picanim 5s;
+}
+@media (max-width: 375px) and (orientation: portrait){
+  #pic3{
+    width: 100%;
+    height: 80%;
+  }
+}
+@media (max-width: 667px)and (orientation: landscape){
+  #pic3{
+    width: 80%;
+    height: 50%;
+    }
+  }
+@keyframes picanim{
+from{
+filter:none;}
+to{
+filter: brightness(30%);}
+}
+#post1 h3,
+#post2 h3,
+#post3 h3{
+padding-top: 5px;
+font-size: 15px;
+color: #555555;
+padding-left: 10px;
+}
+@media (max-width: 667px)and (orientation: landscape){
+  #post1 h3,
+  #post2 h3,
+  #post3 h3{
+    padding-left: 5px;
+    padding-top: 1vw;
+    font-size: 10px;
+    }
+}
+ #post1 p,
+  #post2 p,
+  #post3 p{
+  width: 25vw;
+  padding-top: 1vw;
+  font-size: 10px;
+  text-align:center;
+  margin-bottom: 2vw;
+}
+@media (max-width: 667px)and (orientation: landscape){
+  #post1 p,
+  #post2 p,
+  #post3 p{
+    font-size: 9px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+  }
+}
+#sec7 a{
+  font-size: 1vw;
+  text-decoration: none;
+  color: var(--accentColorLight);
+  padding-bottom: 5px;
+  padding-left: 20px;
+  cursor: url(./images/pointer.png), pointer;
+}
+@media (max-width: 667px)and (orientation: landscape){
+  #sec7 a{
+    font-size: 2vw;
+   }
+  }
+#sec7 a:hover{
+  color: white;
+}
+#scroll_sec7{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+#scroll_sec7 img{
+  cursor: url(./images/pointer.png),pointer;
+}
+#scroll_calendar_left,
+#scroll_calendar_right{
+  position: relative;
+  display: flex;
+  z-index: 3; 
+}
+#scroll_calendar_Coverleft,
+#scroll_calendar_Coverright{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+}
+#scroll_calendar_left:hover #scroll_calendar_Coverleft{
+  display: flex;
+  z-index: 5;
+}
+#scroll_calendar_right:hover #scroll_calendar_Coverright{
+  display: flex;
+  z-index: 5;
+}
+
