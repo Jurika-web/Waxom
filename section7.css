@@ -226,7 +226,7 @@ background-color:#998675;}
     flex-wrap: nowrap;
   }
   @media (max-width: 375px) and (orientation: portrait){
-    .data5{
+    .disc{
       display: none;
     }
   }
@@ -237,12 +237,15 @@ background-color:#998675;}
     }
   }
 #descr1{
+  background-color: #e3e2e1;
  animation: 1s diskanim 1s;
 }
 #descr2{
+background-color: #e3e2e1;
  animation: 1s diskanim 3s;
 }
 #descr3{
+background-color: #e3e2e1;
  animation: 1s diskanim 5s;
 }
 @keyframes diskanim{
